@@ -1,0 +1,178 @@
+.form-control {
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #ccc; /* Subtle border */
+    padding: 6px 10px; /* Adjust padding for balance */
+    box-shadow: none; /* Remove default shadow */
+}
+
+.form-control:focus {
+    border-color: #ffffff; /* Highlight border on focus */
+    outline: none; /* Remove focus outline */
+}
+
+.btn:hover i {
+    color: #ff0202; /* Darker color on hover */
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Ensure it stays above other content */
+}
+.fav-button {
+    width: 100px;
+    padding: 6px; /* Button padding for consistent size */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid white; /* Match button border with Bootstrap's success theme */
+    background-color: white; /* Green background */
+    color: black; /* Button text color */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+.fav-button:hover {
+    background-color: rgb(241, 241, 241);
+    color: black;
+}
+.nav-link{
+    color:white;
+}
+.nav-link:hover{
+    color: #ccc;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0px;
+    background: white;
+    height: 80vh;
+}
+.main .left{
+    width: 25%;
+    height: 80vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #f5fbfd;
+    padding: 20px 6px 5px 10px;
+    position: fixed;
+}
+.main .left::-webkit-scrollbar{
+    width: 7px;
+}
+.main .left::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: #f5fbfd;
+}
+.main .left:hover::-webkit-scrollbar-thumb{
+    background: #cccccc;
+}
+
+.main .right {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 80vh;
+    margin-left: 25%;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #f5f5f5;
+    padding: 2px 60px 12px 10px;
+    position: fixed;
+    
+}
+.main .right .beseller{
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mb-3{
+    padding-right: 13%;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    color: black;
+}
+
+.main .right .rightbot{
+    width: 50%;
+    height: 30vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #f5fcfd;
+    padding: 20px 6px 5px 10px;
+    position: fixed;
+    margin-top: 20%;
+    margin-left: 10%;
+    border-radius: 5px;
+    /*box-shadow: 5px 0px 30px 2px;*/
+}
+.main .right .rightbot::-webkit-scrollbar{
+    width: 7px;
+}
+.main .right .rightbot::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: #f5fbfd;
+}
+.main .right .rightbot:hover::-webkit-scrollbar-thumb{
+    background: #cccccc;
+}
+
+.main .right .mini{
+    width: 50%;
+    height: 8vh;
+    /*overflow: hidden;
+    overflow-y: scroll;*/
+    background: #f5fcfd;
+    padding: 20px 6px 5px 10px;
+    position: fixed;
+    margin-top: 10%;
+    margin-left: 10%;
+    border-radius: 5px;
+    /*box-shadow: 5px 0px 30px 2px;*/
+}
+
+.main .right .rightbot .seller-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.main .right .rightbot .details {
+    flex-grow: 1;
+}
+
+.main .right .rightbot .price {
+    font-weight: bold;
+    color: #28a745;
+}
